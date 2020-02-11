@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        div {
+            text-align: center;
+            width: 300;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Counter: {{session['count']}}</h1>
+        <h1>User actual visit: {{session['visit']}} times</h1>
+        <form action="/" method="post">
+            <input type="submit" name="two_count" value="Add two counts!!"><br>
+            <input type="text" name="user_count" placeholder="enter number of counts">
+            <input type="submit" name="count_submit"><br>
+            <input type="submit" name="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
