@@ -10,6 +10,9 @@
             width: 300;
             margin: 0 auto;
         }
+        input {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -17,9 +20,9 @@
         <h1>Counter: {{session['count']}}</h1>
         <h1>User actual visit: {{session['visit']}} times</h1>
         <form action="/" method="post">
-            <input type="submit" name="two_count" value="Add two counts!!"><br>
             <input type="text" name="user_count" placeholder="enter number of counts">
             <input type="submit" name="count_submit"><br>
+            <input type="submit" name="two_count" value="Add two counts!!">
             <input type="submit" name="reset" value="Reset">
         </form>
     </div>
